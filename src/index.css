@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+:root {
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.tag {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+  
+	background: #2a2a2c;
+	color: #ddd;
+	font-size: 0.85rem;
+	padding: 6px 12px;
+	border-radius: 20px;
+  }
+  
+  .tag svg {
+	font-size: 16px;
+  }
+
+  .leetcode-logo {
+    width: 40;
+    height: 50px;
+    object-fit: contain;
+}

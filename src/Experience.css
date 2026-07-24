@@ -1,0 +1,158 @@
+@import 'tailwindcss';
+
+.experience {
+	max-width: 800px;
+	/* margin: 100px auto; */
+	padding: 0 20px;
+	width: 100%;
+  }
+  
+  .experience h2 {
+	color: #888;
+	letter-spacing: 4px;
+	font-size: 1.2rem;
+	margin-bottom: 30px;
+  }
+  #experience {
+    scroll-margin-top: 120px; /* adjust based on your navbar height */
+  }
+  
+  .exp-card {
+	width: 100%;
+	background: #1c1c1e;
+	border-radius: 12px;
+	margin-bottom: 16px;
+	overflow: hidden;
+  }
+  
+  .exp-header {
+	width: 100%;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 20px 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .exp-title-row {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+  }
+  
+  .exp-logo {
+	width: 90px;
+	height: 40px;
+	border-radius: 8px;
+	object-fit: cover;
+
+  }
+  
+  .exp-title-row h3 {
+	color: #fff;
+	font-size: 1.1rem;
+	margin: 0;
+	text-align: left;
+  }
+  
+  .exp-role {
+	color: #999;
+	font-size: 0.9rem;
+	margin: 4px 0 0;
+	text-align: left;
+  }
+  
+  .chevron {
+	color: #888;
+	transition: transform 0.3s ease;
+  }
+  
+  .exp-card.open .chevron {
+	transform: rotate(180deg);
+  }
+  
+  .exp-content {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.3s ease;
+  }
+  
+  .exp-card.open .exp-content {
+	grid-template-rows: 1fr;
+  }
+  
+  .exp-content-inner {
+	overflow: hidden;
+	padding: 0 24px;
+  }
+  
+  .exp-card.open .exp-content-inner {
+	padding-bottom: 24px;
+  }
+  
+  .tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 16px;
+  }
+  
+  .tag {
+	background: #2a2a2c;
+	color: #ddd;
+	font-size: 0.85rem;
+	padding: 6px 12px;
+	border-radius: 20px;
+  }
+  
+  .exp-points {
+	color: #ccc;
+	line-height: 1.7;
+	padding-left: 18px;
+  }
+  
+  .exp-points li {
+	margin-bottom: 10px;
+  }
+
+
+
+
+  .skills {
+    max-width: 800px;
+    /* margin: 100px auto; */
+    padding: 0 20px;
+    width: 100%;
+    scroll-margin-top: 120px;
+  }
+  
+  .skills h2 {
+    color: #888;
+    letter-spacing: 4px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .skill-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border: 1px dashed #444;
+    border-radius: 10px;
+    color: #ddd;
+    font-size: 1rem;
+    background: transparent;
+  }
+  
+  .skill-icon {
+    font-size: 1.1rem;
+  }
