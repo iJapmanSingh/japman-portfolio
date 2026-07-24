@@ -1,4 +1,4 @@
-# Japman Portfolio
+# My Portfolio
 
 My personal developer portfolio showcasing my projects, technical skills, experience, and achievements.
 
