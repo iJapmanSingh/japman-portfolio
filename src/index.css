@@ -1,7 +1,11 @@
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+body {
+	font-family: 'Quicksand', sans-serif;
+  }
 
 :root {
-	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	/* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
 	line-height: 1.5;
 	font-weight: 400;
 
@@ -24,7 +28,7 @@
 	padding: 6px 12px;
 	border-radius: 20px;
   }
-  
+
   .tag svg {
 	font-size: 16px;
   }
@@ -44,3 +48,13 @@ html {
 		scroll-behavior: auto;
 	}
 }
+.no-scrollbar::-webkit-scrollbar{
+    display:none;
+}
+
+.no-scrollbar{
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+}
+
+
