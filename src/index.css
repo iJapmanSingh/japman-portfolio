@@ -34,3 +34,13 @@
     height: 50px;
     object-fit: contain;
 }
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
