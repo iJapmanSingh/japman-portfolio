@@ -8,6 +8,10 @@ import iitroparLogo from "./assets/iitropar-logo.png";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import analytics from "./utils/analytics";
+import { useEffect } from "react";
+
+
 import {
 	FaGithub,
 	FaLinkedin,
@@ -23,6 +27,8 @@ import "./Experience.css";
 // ==============================
 // Experience Data
 // ==============================
+
+
 
 const experiences = [
 	{
@@ -111,6 +117,10 @@ function App() {
 
 	const project = projects[currentProject];
 
+	useEffect(() => {
+		analytics.custom("portfolio_visit");
+	}, []);
+
 	function handleToggleGameMode() {
 		setGameMode((g) => !g);
 		setScore(0);
@@ -185,12 +195,13 @@ function App() {
 					</div>
 
 					<div className="flex justify-center gap-5 mt-0 flex-wrap">
-						<a
-							href="https://www.linkedin.com/in/japman-singh11/"
-							target="_blank"
-							rel="noreferrer"
-							className="group"
-						>
+					<a
+						href="https://www.linkedin.com/in/japman-singh11/"
+						target="_blank"
+						rel="noreferrer"
+						className="group"
+						onClick={() => analytics.linkedin("hero")}
+					>
 							<div className="w-12 h-12 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-md
 											flex items-center justify-center
 											hover:bg-white hover:text-black hover:scale-110
@@ -203,6 +214,7 @@ function App() {
 							target="_blank"
 							rel="noreferrer"
 							className="group"
+							onClick={() => analytics.github("hero")}
 						>
 							<div className="w-12 h-12 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-md
 											flex items-center justify-center
@@ -216,7 +228,8 @@ function App() {
 							target="_blank"
 							rel="noopener noreferrer"
 							className="social-icon"
-						>
+							onClick={() => analytics.leetcode()}
+							>
 							<img
 								src="/leetcode.png"
 								alt="LeetCode"
@@ -226,7 +239,8 @@ function App() {
 						<a
 							href="mailto:japman006@gmail.com"
 							className="group"
-						>
+							onClick={() => analytics.email("hero")}
+							>
 							<div className="w-12 h-12 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-md
 											flex items-center justify-center
 											hover:bg-white hover:text-black hover:scale-110
@@ -239,7 +253,8 @@ function App() {
 							target="_blank"
 							rel="noreferrer"
 							className="group"
-						>
+							onClick={() => analytics.instagram()}
+							>
 							<div className="w-12 h-12 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-md
 											flex items-center justify-center
 											hover:bg-white hover:text-black hover:scale-110
@@ -248,10 +263,11 @@ function App() {
 							</div>
 						</a>
 						<a
-							href="/resume.pdf"
-							target="_blank"
-							className="group"
-						>
+								href="/resume.pdf"
+								target="_blank"
+								className="group"
+								onClick={() => analytics.resume("hero")}
+								>
 							<div className="px-8 h-12 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-md
 											flex items-center gap-3
 											hover:bg-white hover:text-black hover:scale-110
