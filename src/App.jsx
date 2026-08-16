@@ -74,7 +74,7 @@ const projects = [
 		github: "https://github.com/iJapmanSingh/DevBoard",
 
 		demo:
-			"https://dev-board-847th1m2u-japman-singh-s-projects.vercel.app/",
+			"https://dev-board-nine.vercel.app/",
 	},
 
 	{
