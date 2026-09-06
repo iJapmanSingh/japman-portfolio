@@ -47,6 +47,18 @@ const experiences = [
 			"Collaborated with an AI/ML and Android team to develop an IoT-based precision agriculture system using BLE-enabled optical soil sensors.",
 		],
 	},
+	{
+		logo: iitroparLogo,
+		company: "Annam.ai @ IIT Ropar",
+		role: "Summer Research Intern",
+		duration: "Jun 2025 - Jul 2025",
+
+		points: [
+			"Contributed to a wind-sensing research project, writing and debugging embedded C firmware for ultrasonic transducers on TI MSP430 microcontrollers to measure Time-of-Flight (ToF) and estimate wind speed and direction.",
+
+			"Implemented signal averaging and filtering to improve sensor measurement stability, and transmitted processed data via UART for real-time analysis.",
+		],
+	},
 ];
 
 // ==============================
