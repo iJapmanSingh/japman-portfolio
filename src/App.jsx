@@ -35,7 +35,7 @@ const experiences = [
 		logo: iitroparLogo,
 		company: "iHub-AWaDH @ IIT Ropar",
 		role: "AI/ML Intern",
-		duration: "May 2026 - Jul 2026",
+		duration: "May 2025 - Jul 2025",
 
 		points: [
 			"Preprocessed a 19,000+ sample hyperspectral soil reflectance dataset (1,000 spectral bands, 400–940 nm) using Python, NumPy and Pandas by handling missing values, removing duplicates, treating outliers and scaling spectral features.",
@@ -51,7 +51,7 @@ const experiences = [
 		logo: iitroparLogo,
 		company: "Annam.ai @ IIT Ropar",
 		role: "Summer Research Intern",
-		duration: "Jun 2025 - Jul 2025",
+		duration: "Jun 2026 - Jul 2026",
 
 		points: [
 			"Contributed to a wind-sensing research project, writing and debugging embedded C firmware for ultrasonic transducers on TI MSP430 microcontrollers to measure Time-of-Flight (ToF) and estimate wind speed and direction.",
