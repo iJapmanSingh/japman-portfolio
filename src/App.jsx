@@ -2,7 +2,8 @@ import PlatformerGame from "./components/PlatformerGame";
 import ParticlePortrait from "./components/ParticlePortrait";
 import profiler from "./assets/profile.png";
 import headshot from "./assets/headshot.png";
-import devboard from "./assets/devboard.png";
+import ruralFinancialAdvisor from "./assets/ruralfinancialadvisor.png";
+import chessBoard from "./assets/chessboard.png";
 import prsnlportfolio from "./assets/prsnlportfolio.png";
 import iitroparLogo from "./assets/iitropar-logo.png";
 import { useState } from "react";
@@ -67,31 +68,52 @@ const experiences = [
 
 const projects = [
 	{
-		title: "DevBoard",
-		subtitle: "Developer Productivity Dashboard",
+		title: "Rural Financial Advisor",
+		subtitle: "AI-Assisted Loan Advisor for Rural Entrepreneurs",
 
 		description:
-			"A full-stack dashboard that aggregates LeetCode, Codeforces and GitHub statistics while providing task management, notes and analytics.",
+			"A full-stack financial advisory platform with a Spring Boot and PostgreSQL backend for loan sizing, EMI calculation, PM Mudra/PMEGP scheme matching and credit-risk bands. The backend acts as the single source of truth for validated financial figures, while an AI service explains the results.",
 
-		image: devboard,
+		image: ruralFinancialAdvisor,
 
 		tech: [
-			"React",
-			"Node.js",
-			"Express",
-			"MongoDB",
-			"Tailwind",
+			"Java",
+			"Spring Boot",
+			"PostgreSQL",
+			"Docker",
+			"AWS EC2",
 		],
 
-		github: "https://github.com/iJapmanSingh/DevBoard",
+		// Replace these with your actual repository and deployed application URLs.
+		github: "https://github.com/iJapmanSingh/rural-financial-advisor",
+		demo: "http://3.110.177.209/",
+	},
 
-		demo:
-			"https://dev-board-nine.vercel.app/",
+	{
+		title: "Online Chess",
+		subtitle: "Chess Rules Engine & Two-Player Web App",
+
+		description:
+			"A Java chess rules engine with legal move validation, check, checkmate, stalemate and promotion, exposed through a Spring Boot REST API for real-time two-player games with server-side turn enforcement and per-game locking.",
+
+		image: chessBoard,
+
+		tech: [
+			"Java",
+			"Spring Boot",
+			"React",
+			"JUnit",
+			"AWS EC2",
+			"nginx",
+		],
+
+		github: "https://github.com/iJapmanSingh/Chess-Engine",
+		// Replace this with your actual deployed chess application URL.
+		demo: "http://13.201.74.123/",
 	},
 
 	{
 		title: "Personal Portfolio",
-
 		subtitle: "Interactive Developer Portfolio",
 
 		description:
@@ -318,12 +340,12 @@ function App() {
 
 									{[
 										"Java",
-										"JavaScript (ES6+)",
+										"Spring Boot",
 										"React.js",
+										"PostgreSQL",
+										"Docker",
+										"AWS EC2",
 										"Tailwind CSS",
-										"Node.js",
-										"Express.js",
-										"MongoDB",
 										"Git & GitHub",
 									].map((tech) => (
 										<div
